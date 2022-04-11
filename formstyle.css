@@ -1,0 +1,99 @@
+.form-container {
+    width: 1000px;
+    max-width: 320px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    }
+
+    input[type=text], input[type=email], input[type=phone], input[type=number], textarea {
+        width: 90%;
+        margin: 20px auto;
+        box-shadow: 0  0 1px 1px white;
+    }
+    textarea {
+        min-height: 150px;
+    }
+    
+    .btn-group {
+        width: 90%;
+        margin: 0 auto 10px auto;
+    }
+    .back {
+        float: left;
+    }
+    .continue {
+        float: right;
+    }
+
+    /* Multi-Part CSS */
+    input[type=checkbox] {
+    position: absolute;
+    /* Position the checkbox in upper left corner */
+    
+    opacity: 0;
+    }
+
+    /* Styling Parts */
+    #part1,
+    #part2,
+    #part3 {
+    z-index: 2;
+    display: block;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    }
+
+    /* Hidden Parts */
+    #part2,
+    #part3 {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    }
+
+    /* Show Step 2 & Hide Step 1 */
+    #step2:checked ~ #part2 {
+    opacity: 1;
+    height: auto;
+    }
+    #step2:checked ~ #part1 {
+    opacity: 0;
+    height: 0;
+    display: none;
+    }
+
+    /* Show Step 3  & Hide Step 2 */
+    #step3:checked ~ #part3 {
+    opacity: 1;
+    height: auto;
+    }
+    #step3:checked ~ #part2 {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    /* Show Step 4  & Hide Step 3 */
+    #step4:checked ~ #part4 {
+    opacity: 1;
+    height: auto;
+    }
+    #step4:checked ~ #part3 {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    /* Show Step 5  & Hide Step 4 */
+    #step5:checked ~ #part5 {
+    opacity: 1;
+    height: auto;
+    }
+    #step5:checked ~ #part4 {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }

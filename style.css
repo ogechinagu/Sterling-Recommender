@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+	font-family: Poppins, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #333;
+}
+
+h2 {
+	font-size: 44px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: .05em;
+	color: #131313;
+}
+
+b {
+	font-weight: 700;
+}
+
+section {
+	padding: 70px 0px;
+}
+
+.title-block {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.title-block p {
+	font-size: 18px;
+	font-weight: 300;
+	color: #131313;
+	margin-bottom: 0px;
+}
+
+.divider {
+	padding: 2rem 0 0;
+    margin: 2rem 0 0;
+    border-top: 1px solid #DDD;
+}
+
+.divider-light {
+	padding: 2rem 0 0;
+    margin: 2rem 0 0;
+	border-top: 1px solid #edf1f2
+}
+
+/* Navbar */
+
+.custom-navbar {
+	background-color: #ffffff!important;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.09);
+	height: 70px;
+	max-height: 70px;
+}
+
+.navbar-toggler {
+	font-size: 38px;
+	background-color: transparent;
+}
+
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.navbar-toggler-icon {
+	color: #ffffff;
+}
+
+.navbar-collapse {
+	background-color: #ffffff;
+}
+
+.nav-custom-link {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: .05em;
+	margin-top: 5px;
+}
+
+.navbar a {
+	color: #333 !important;
+	margin: auto 20px;
+}
+
+.navbar a:hover {
+	color: #D33338 !important;
+}
+
+.nav-right {
+	float: right;
+}
+
+/* Buttons */
+
+.btn {
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 3px!important;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.08);
+}
+
+.btn:hover {
+	text-decoration: none;
+}
+
+.btn-regular {
+	background-color: #D33338;
+	color: #ffffff;
+	padding: 10px 25px;
+	letter-spacing: .1em;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.btn-regular:hover {
+	background-color: #D33338dc;
+	color: #ffffff;
+}
+
+.btn-nav {
+	font-size: 12px;
+	background-color: #D33338;
+	padding: 1px 4px;
+}
+
+.btn-nav:hover {
+	background-color: #D33338dc;
+}
+
+.btn-nav a {
+	color: #ffffff!important;
+}
+
+.btn-nav a:hover {
+	color: #ffffff!important;
+}
+
+/* Hero */
+
+#hero {
+	background-color: #FCFCFF;
+}
+
+#hero h1 {
+	font-size: 50px;
+	font-weight: 300;
+}
+
+#hero p {
+	font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+#hero img {
+	margin-top: 30px;
+}
+
+/* About */
+
+.content-box {
+	padding: 30px 20px;
+}
+
+.about-card {
+	background-color: #ffffff;
+	padding: 40px 20px;
+	border: 1px solid #F8F9FB;
+	border-radius: 6px;
+	box-shadow: 0 0 1px 0 rgba(0,12,32,0.04), 0 10px 16px 0 rgba(10,31,68,0.06);
+	margin-top: 30px;
+}
+
+.about-card h6 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #D33338;
+	margin-bottom: 0px;
+}
+
+.about-card p {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.about-card small {
+	color: #BBB;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+/* Call to Action */
+
+#call-to-action {
+	background-color: #D33338;
+	height: 100%;
+}
+
+#call-to-action h2 {
+	color: #ffffff;
+}
+
+#call-to-action p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #ffffff;
+	opacity: .8;
+	margin-bottom: 40px;
+}
+
+#call-to-action .title-block {
+	margin-bottom: 0px;
+}
+
+#call-to-action .btn-regular {
+	background-color: #ffffff!important;
+	color: #D33338!important;
+	padding: 15px 45px;
+}
+
+#call-to-action .btn-regular:hover {
+	background-color: #FCFCFF!important;
+	color: #D33338dc!important;
+	padding: 15px 45px;
+}
+
+#call-to-action .title-block {
+	margin-bottom: 0px;
+}
+
+/* Footer */
+
+footer {
+	background-color: #fff;
+    padding: 60px 0;
+    color: #666;
+}
+
+footer i {
+	font-size: 25px;
+	color: #666;
+	margin-right: 10px;
+}
+
+footer i:hover {
+	color: #BBB;
+}
+
+footer small {
+	color: #666;
+	float: right;
+}
+
+.external-links {
+	color: #BBB;
+}
+
+/* Form */
+
+.form-container {
+width: 1000px;
+max-width: 320px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+border: 1px solid #F8F9FB;
+}
+
+input[type=text], input[type=email], input[type=phone], input[type=number], textarea {
+	width: 90%;
+	margin: 20px auto;
+	box-shadow: 0  0 1px 1px white;
+}
+textarea {
+	min-height: 150px;
+}
+
+.btn-group {
+	width: 90%;
+	margin: 0 auto 10px auto;
+}
+
+.btn-primary {
+	background-color: #D33338;
+	color: #ffffff;
+	padding: 10px 40px;
+	letter-spacing: .1em;
+	display: inline-block;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #D33338dc;
+	color: #ffffff;
+}
+
+.btn-success {
+	background-color: #D33338;
+	color: #ffffff;
+	padding: 10px 20px;
+	letter-spacing: .1em;
+	display: inline-block;
+	border: none;
+}
+
+.btn-success:hover {
+	background-color: #D33338dc;
+	color: #ffffff;
+}
+
+.back {
+	float: left;
+	margin-right: 20px;
+}
+.continue {
+	float: right;
+}
+
+/* Multi-Part CSS */
+input[type=checkbox] {
+position: absolute;
+/* Position the checkbox in upper left corner */
+
+opacity: 0;
+}
+
+/* Styling Parts */
+#part1,
+#part2,
+#part3,
+#part4,
+#part5 {
+z-index: 2;
+display: block;
+height: auto;
+opacity: 1;
+transition: opacity 1s ease-in-out;
+}
+
+/* Hidden Parts */
+#part2,
+#part3,
+#part4,
+#part5 {
+opacity: 0;
+height: 0;
+overflow: hidden;
+}
+
+/* Show Step 2 & Hide Step 1 */
+#step2:checked ~ #part2 {
+opacity: 1;
+height: auto;
+}
+#step2:checked ~ #part1 {
+opacity: 0;
+height: 0;
+display: none;
+}
+
+/* Show Step 3  & Hide Step 2 */
+#step3:checked ~ #part3 {
+opacity: 1;
+height: auto;
+}
+#step3:checked ~ #part2 {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* Show Step 4  & Hide Step 3 */
+#step4:checked ~ #part4 {
+opacity: 1;
+height: auto;
+}
+#step4:checked ~ #part3 {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* Show Step 5  & Hide Step 4 */
+#step5:checked ~ #part5 {
+opacity: 1;
+height: auto;
+}
+#step5:checked ~ #part4 {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* Form End */
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	body {
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 34px!important;
+		margin-bottom: 20px;
+		line-height: 1.6;
+	}
+	.title-block h2, p {
+		padding: 0px 20px;
+	}
+
+	#call-to-action h2, p {
+		padding: 0 20px;
+	}
+
+	#call-to-action {
+		background-image: none;
+		background-color: #D33338;
+	}
+
+	footer {
+		padding: 60px 25px;
+	}
+	footer h5 {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	footer li {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	footer p {
+		font-size: 16px;
+	}
+	footer i {
+		font-size: 30px;
+		margin-right: 20px;
+	}
+	footer small {
+		float: left;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 768px) { 
+	#hero h1 {
+		font-size: 34px!important;
+		margin-bottom: 20px;
+	}
+	#hero p {
+		font-size: 20px!important;
+	}
+}
+
+@media (max-width: 991px) { 
+	.nav-right {
+		float: left;
+	}
+	.nav-custom-link {
+		border-bottom: 1px solid #EEE;
+	}
+	.navbar-nav{
+		width: 100%;
+	}
+	.navbar-nav .nav-link {
+		padding: 20px 0;
+		text-align: left;
+	}
+
+	.btn-demo-small {
+		background-color: #ffffff;
+		border: 0px;
+		padding: 0px;
+		box-shadow: none;
+
+	}
+	.btn-demo-small:hover {
+		background-color: #ffffff;
+		border: 0px;
+		padding: 0px;
+		box-shadow: none;
+
+	}
+	.btn-demo-small a {
+		color: #53627C!important;
+	}
+	.nav-custom-link {
+		font-size: 13px;
+	}
+
+	.icon-mobile {
+		font-size: 18px;
+		float: right;
+	}
+
+	.navbar-collapse {
+		border-bottom: 1px solid #efefef;
+	}
+
+	.nav-logo-mobile {
+		margin: auto;
+		padding-right: 50px;
+	}
+
+	.nav-logo-desktop {
+		display: none;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.icon-mobile {
+		display: none;
+	}
+	.nav-logo-mobile {
+		display: none;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.hero-content {
+		margin-top: 100px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.about-card h3 {
+		font-size: 17px;
+	}
+	.about-card p {
+		font-size: 14px;
+	}
+	.about-card li {
+		font-size: 12px;
+	}
+	.btn-buy {
+		font-size: 12px;
+		padding: 15px 20px;
+	}
+	.btn-demo {
+		font-size: 12px;
+		padding: 15px 20px;
+	}
+	.profile-picture {
+		width: 50px;
+		height: 50px;
+	}
+	.testimonial-box h6 {
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	.testimonial-box span {
+		font-size: 12px;
+	}
+	.testimonial-box small {
+		font-size: 12px;
+		margin-top: 4px;
+		margin-left: 10px;
+	}
+}

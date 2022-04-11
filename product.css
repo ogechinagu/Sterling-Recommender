@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+	font-family: 'Poppins', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+.sidebar { 
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    left: 0px;
+    top: 70px;
+    z-index: 100;
+    background: #d33338;
+    color: #ffffff;
+    overflow-y: auto;
+    transition: width 200ms;
+
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 40px 20px 30px ;
+}
+
+.sidebar-header h3 {
+    padding-top: 20px;
+}
+
+
+.searchbox input {
+    border: 0;
+    outline: 0;
+    padding-left: 10px;
+    height: 30px;
+    width: 160px;
+}
+
+.inputtext {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.sidebar-menu {
+    padding: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #ffffff;
+}
+
+.sidebar a:hover {
+    color: #eee;
+    text-decoration: none;
+}
+
+.sidebar a span:last-child {
+    padding-left: 5px;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+    margin-left: 60px;
+}
+
+.main-content {
+    position: relative;
+    margin-left: 240px;
+    margin-top: 70px;
+    transition: margin-left 200ms;
+    padding: 20px 40px;
+    background-color: #FCFCFF;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    margin-top: -30px;
+}
+
+.intro h1 {
+	font-size: 50px;
+	font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+.categories p {
+    margin: 10px 20px;
+}
+
+.categories h3 {
+    margin: 50px 20px 0px;
+}
+
+.services-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  margin: 8px;
+}
+
+.flip-box {
+  background-color: #ffffff;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #F8F9FB;  
+  border-radius: 6px;
+  perspective: 1000px;
+  padding: 20px;
+  box-shadow: 0 0 1px 0 rgba(0,12,32,0.04), 0 10px 16px 0 rgba(10,31,68,0.06);
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-box-front {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.flip-box-front img {
+  height: auto;
+  width: 120px;
+}
+
+.flip-box-back {
+  background-color: #ffffff;
+  color: #000;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.flip-box-back p {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        width: 60px;
+        z-index: 150;
+    }
+
+    .sidebar .sidebar-header h3 span,
+    .sidebar li span:last-child {
+        display: none;
+    }
+    
+    .sidebar .sidebar-header,
+    .sidebar li {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-content {
+        margin-left: 60px;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar {
+        width: 240px;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+    #sidebar-toggle:checked ~ .sidebar li span:last-child {
+        display: inline;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar li {
+        display: block;
+    }
+    
+    #sidebar-toggle:checked ~ .main-content {
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Sterling.png" type="image/x-icon">
+    <title>Recommender</title>
+</head>
+<body>
+    <!-- N A V B A R -->
+    <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon ion-md-menu"></span>
+        </button>
+        <img src="images/Recommender.png" class="img-fluid nav-logo-mobile" alt="Recommender Logo" width="220px">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="container">
+              <img src="images/Recommender.png" class="img-fluid nav-logo-desktop" alt="Recommender Logo" width="15%">
+            <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+              <li class="nav-item nav-custom-link">
+                <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+              </li>
+              <li class="nav-item nav-custom-link">
+                <a class="nav-link" href="#about">About <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+              </li>
+              <li class="nav-item nav-custom-link">
+                <a class="nav-link" href="/product.html">Products <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- E N D  N A V B A R -->
+
+    <!-- F O R M -->
+    <section id="form">
+        <div class="container">
+            <div class="form-container">
+                <form action="" role="form">
+                    <input id='step2' type='checkbox'>
+                    <input id='step3' type='checkbox'>
+                    <input id='step4' type='checkbox'>
+                    <input id='step5' type='checkbox'>
+            
+                    <div id="part1" class="form-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Let's get to know you</h3>
+                        </div>
+                        <input type="text" id="name" class="form-control" placeholder="Full Name" aria-describedby="sizing-addon1">
+                        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                        <label for='step2' id="continue-step2" class="continue">
+                            <div class="btn btn-default btn-success btn-lg">Continue</div>
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+            
+                    <div id="part2" class="form-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Personal Info</h3>
+                        </div>
+                        <input type="email" id="email" class="form-control" placeholder="Email">
+                        <input type="phone" id="phone" class="form-control" placeholder="Phone">
+                        <input type="number" id="zip" class="form-control" placeholder="Address">
+                        <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+            
+                        <label for='step2' id="back-step2" class="back">
+                            <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
+                        </label>
+            
+            
+                        <label for='step3' id="continue-step3" class="continue">
+                            <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+                        </label>
+            
+                        </div>
+                    </div>
+                    </div>
+            
+                    <!-- Start -->
+            
+                    <div id="part3" class="form-group">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                            <h3 class="panel-title">Let's get social</h3>
+                            </div>
+                            <input type="email" id="email" class="form-control" placeholder="Facebook">
+                            <input type="phone" id="phone" class="form-control" placeholder="Twitter">
+                            <input type="number" id="zip" class="form-control" placeholder="Instagram">
+                            <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+                
+                            <label for='step3' id="back-step3" class="back">
+                                <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
+                            </label>
+                
+                
+                            <label for='step4' id="continue-step4" class="continue">
+                                <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+                            </label>
+                
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div id="part4" class="form-group">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                            <h3 class="panel-title">What are your interests?</h3>
+                            </div>
+                            <input type="email" id="email" class="form-control" placeholder="Are you digitally savvy?">
+                            <input type="phone" id="phone" class="form-control" placeholder="What are your interests?">
+                            <input type="number" id="zip" class="form-control" placeholder="Have you ever used a Sterling solution?">
+                            <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+                
+                            <label for='step4' id="back-step4" class="back">
+                                <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
+                            </label>
+                
+                
+                            <label for='step5' id="continue-step5" class="continue">
+                                <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+                            </label>
+                
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- End -->
+            
+                    <div id="part5" class="form-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Tell Us More?</h3>
+                        </div>
+                        <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                        <label for='step5' id="back-step5" class="back">
+                            <div class="btn btn-default btn-primary btn-lg">Back</div>
+                        </label>
+                        <label class="continue">
+                            <button type="submit" class="btn btn-default btn-success btn-lg">Submit</button>
+                        </label>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        
+    </section>
+    <!-- E N D  F O R M -->
+      
+      
+
+</body>
+</html>
